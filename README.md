@@ -51,20 +51,8 @@ Allow users to:
 
 -   Once a message is received, delete the message from the messages array of the channel it belongs to, and annouce it to all users.
 
-### main.js
+## Technologies
 
--   Line 3-27: check whether the user needs to login or not based on localStorage and the value of isUserExist, then display the webpage respectively.
--   line 29-39: check to whether or not disable the submit button of login form.
--   line 41-64: send an ajax request to server to check if username is valid and login user by display the main page.
--   line 66-82: send an ajax request to server to get a list of all active channels.
--   line 84-92: check to whether or not disable the create button to submit new channel.
--   line 99-117: emit new channels to event 'submit channel'.
--   line 119-135: emit new messages to event 'submit message'.
--   Line 138-151: call function createMessage() to create and display the new channel once it's been announced.
--   line 153-163: call funtion createChannel() to create and display the new message once it's been announced.
--   line 165-168: define function scrollToBottom(): once new message is created, the webpage will automatically scroll to bottom.
--   line 170-193: define function createMessage()
--   line 195-213: define function createChannel()
--   line 215-229: define function selectChannelHandler(): Change color of the channel is selected as active, save the channel id to localStorage and call function loadMessages() to display all the messages of this channel.
--   line 231-245: define function loadMessages()
--   line 247-260: define function deleteMessage(): emit the choosen message (which then will be deleted) to event 'delete message', then delete the message once it's been announced.
+-   Flask
+-   Socket.IO
+-   JavaScript
