@@ -1,5 +1,4 @@
-#Flack
-A Web Chat
+# Flack - A Web Chat
 
 ## Feature
 
