@@ -1,0 +1,71 @@
+html,
+body,
+#page,
+#content {
+    height: 100%;
+}
+
+body {
+    padding-top: 56px;
+}
+
+#page {
+    display: none;
+}
+
+.row-nowrap {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.flex-grow-1 {
+    min-height: 0px;
+}
+
+#overflow-wrapper {
+    overflow: auto;
+}
+
+#first-one,
+#join-later {
+    display: none;
+    margin-left: 25%;
+    margin-top: 20%;
+}
+
+.col-9,
+.col-3 {
+    padding: 0;
+}
+
+.bg-green {
+    background-color: #daf7a6;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        height: 100%;
+        line-height: 100%;
+    }
+
+    99% {
+        opacity: 0;
+        height: 100%;
+        line-height: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0;
+        line-height: 0;
+    }
+}
+
+.message {
+    animation-name: hide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}

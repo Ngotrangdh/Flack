@@ -1,0 +1,58 @@
+{% extends "layout.html" %} {% block body %}
+<div class="container-fluid" id="page">
+    <div id="login" class="row-nowrap justify-content-center">
+        <div class="col-12 col-lg-6 mt-5">
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" />
+                </div>
+                <button id="login-submit" type="submit" class="btn btn-outline-info">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="content" class="row-nowrap">
+        <div class="col-3 bg-light border">
+            <div class="form-group m-3">
+                <label for="">Start new channel</label>
+                <input type="text" class="form-control" id="new-channel" />
+            </div>
+            <button id="new-channel-submit" type="submit" class="btn btn-sm btn-outline-info ml-3 mb-3">
+                Create
+            </button>
+            <div class="card-header">
+                Channels
+            </div>
+            <ul id="channels" class="list-group list-group-flush"></ul>
+        </div>
+        <div class="col-9 d-flex flex-column">
+            <div class="row-nowrap flex-grow-1">
+                <div class="col-12" id="overflow-wrapper">
+                    <div class="card w-50 text-white bg-warning text-center" id="first-one">
+                        <div class="card-header">
+                            Welcome to Flack
+                        </div>
+                        <h3 class="card-title p-5">
+                            Creat a channel to start a conversation
+                        </h3>
+                    </div>
+                    <div class="card w-50 text-white bg-warning text-center" id="join-later">
+                        <div class="card-header">
+                            Welcome to Flack
+                        </div>
+                        <h3 class="card-title p-5">
+                            Choose a channel on the left to start a conversation
+                        </h3>
+                    </div>
+                    <ul id="message-list" class="list-group list-group-flush"></ul>
+                </div>
+            </div>
+            <div class="row-nowrap p-4">
+                <div class="col-12">
+                    <input class="form-control border-dark" id="new-message" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
